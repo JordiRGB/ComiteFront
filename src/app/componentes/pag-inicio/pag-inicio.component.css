@@ -1,0 +1,10 @@
+header {
+    background: rgba(17, 191, 40, 0.7);
+    width: 100%;
+    position: fixed;
+}
+button{
+    color: white;
+    border-radius: 2%;
+    width: auto;
+}
