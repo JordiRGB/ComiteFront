@@ -1,10 +1,52 @@
-header {
-    background: rgba(17, 191, 40, 0.7);
-    width: 100%;
+/* This first section is a simple "reset". It allows the navbar to push up against the top of the browser window with no white space around it. This code also sets the default font for your whole page. Put it at the very top of your css page.  */
+html, body, div, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;   
+  }
+
+  .btnMenu{
+    padding-left: 0%;
+    border-radius: 1cm;
+    margin-right: 5px;
+    margin-right: 20px;
+  }
+  /* This class is applied to the containing div <div class="nav"> and is used to set the background color and height of the navbar */
+  .nav {
     position: fixed;
-}
-button{
-    color: white;
-    border-radius: 2%;
-    width: auto;
-}
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #3faa3f;
+    height: 100px; /* set same as height & line-height below */
+    justify-content: end;
+  }
+  
+  /* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
+  .nav li {
+    display: inline-block;
+    list-style: none;
+    height: 100px; /* should be the same as line-height */
+    line-height: 75px; /* should be the same as height */
+    padding: 0 40px; /* "0" sets top and bottom padding to none */
+    justify-content: end;
+  }
+  
+  /* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+  .nav li:hover {
+    background: rgb(255, 255, 255);
+    transition: background .3s;
+  }
+  
+  /* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
+  .nav-link {
+    color: #000000;
+    font-size: 200%;
+    text-decoration: none;
+    margin-top: 10px;
+  }
