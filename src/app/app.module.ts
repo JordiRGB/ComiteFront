@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PagInicioComponent } from './componentes/pag-inicio/pag-inicio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { JefesdecarreraComponent } from './componentes/jefesdecarrera/jefesdecarrera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagInicioComponent
+    PagInicioComponent,
+    JefesdecarreraComponent
   ],
   imports: [
     BrowserModule,
