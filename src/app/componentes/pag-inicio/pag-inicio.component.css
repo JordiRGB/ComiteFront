@@ -1,29 +1,29 @@
 /* This first section is a simple "reset". It allows the navbar to push up against the top of the browser window with no white space around it. This code also sets the default font for your whole page. Put it at the very top of your css page.  */
+/*SECCION MENU*/
 html, body, ul, li, div {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    vertical-align:baseline;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;   
   }
-
-  .btnMenu{
-    padding-left: 0%;
-    border-radius: 1cm;
-    margin-right: 5px;
-    margin-right: 20px;
+  .logob{
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    line-height: 90px; 
   }
   /* This class is applied to the containing div <div class="nav"> and is used to set the background color and height of the navbar */
   .nav {
     position: fixed;
-    width: 100%;
+    width:100%;
     top: 0;
     z-index: 1000;
     background: #8BC34A;
-    height: 100px; /* set same as height & line-height below */
+    height: 110px; /* set same as height & line-height below */
     justify-content: end;
   }
   
@@ -31,8 +31,8 @@ html, body, ul, li, div {
   .nav li {
     display: inline-block;
     list-style: none;
-    height: 100px; /* should be the same as line-height */
-    line-height: 75px; /* should be the same as height */
+    height: 110px; /* should be the same as line-height */
+    line-height: 100px; /* should be the same as height */
     padding: 0 40px; /* "0" sets top and bottom padding to none */
     justify-content: end;
   }
@@ -42,15 +42,48 @@ html, body, ul, li, div {
     background: rgb(255, 255, 255);
     transition: background .3s;
   }
+
+  .nav .com {
+    display: inline-block;
+    list-style: none;
+    height: 110px; /* should be the same as line-height */
+    line-height: 100px; /* should be the same as height */
+    padding: 0 40px; /* "0" sets top and bottom padding to none */
+    margin-right: 550px;
+  }
+  
+  /* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+  .nav .com:hover {
+    background: rgb(255, 255, 255);
+    transition: background .3s;
+  }
   
   /* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
   .nav-link {
     color: #000000;
     font-size: 200%;
     text-decoration: none;
-    margin-top: 10px;
+  }
+  .btnMenu{
+    padding-left: 0%;
+    border-radius: 1cm;
+    margin-left: 5px;
+    margin-right: 20px;
   }
 
+    /*SECCION 1*/
+    .carousel-inner {
+        width: 100%; /* Ajusta el ancho al 100% para que se adapte al contenedor */
+    }
+      
+    .carousel-item img {
+        margin-top: 100px;
+        object-fit:fill;
+        max-height: 100%; /* Establece un tamaño máximo para las imágenes */
+    }
+      
+    
+    /*SECCION 2*/
   .sec22 {
     display: flex;
     background: rgb(208, 207, 207);
@@ -98,6 +131,8 @@ html, body, ul, li, div {
         text-align: center;
         line-height: 1.5px;
     }
+
+    /*SECCION 3*/
     .sec33{
         background-color: #8BC34A;
         height: 1000px;
@@ -113,6 +148,30 @@ html, body, ul, li, div {
         text-align: center; /* Alinea el contenido del contenedor al centro */
         height: 200px; /* Altura del contenedor */
     }
+    table{
+        background:#8BC34A;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px auto;
+        margin-top: 80px;
+    }
+    th{
+        padding: 0px;
+        text-align: center;
+    }
+    .td1{
+        text-align: center;
+        font-size: 220%;
+    }
+    .td2{
+        text-align: center;
+        font-size: 220%;
+    }
+    .td3{
+        text-align: center;
+        font-size: 220%;
+    }
+      
     .img3{
         padding-top: 2%;
         height: 140px;
@@ -120,6 +179,26 @@ html, body, ul, li, div {
         margin: auto; /* Aplica márgenes automáticos para centrar horizontalmente */
         display: block; /* Cambia la visualización a "block" para que los márgenes automáticos funcionen */
     }
+    .img4{
+        padding-top: 2%;
+        margin-left: 10%;
+        height: 120px;
+        width: 100px;
+    }
+    .ResTer{
+        margin-top: 1%;
+        margin-left: 4%;
+        text-align: justify;
+    }
+    .img5{
+        padding-top: 2%;
+        margin-left: 31%;
+        height: 140px;
+        width: 100px;
+    }
+
+
+    /*SECCION 4*/
     .sec44{
         background-color: #000000;
         height: 240px;
@@ -140,4 +219,3 @@ html, body, ul, li, div {
         color:white;
         text-align: center;
     }
-    
