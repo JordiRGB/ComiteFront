@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./pag-inicio.component.css']
 })
 export class PagInicioComponent {
+  ngAfterViewInit(): void {
+    this.myFunction();
+  }
 
+  myFunction(): void {
+    const x = document.getElementById('myTopnav');
+    if (x) {
+      if (x.className === 'topnav') {
+        x.className += ' responsive';
+      } else {
+        x.className = 'topnav';
+      }
+    }
+  }
 }
