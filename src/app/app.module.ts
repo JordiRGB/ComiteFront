@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PagInicioComponent } from './componentes/pag-inicio/pag-inicio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { PagRegCasoComponent } from './componentes/pag-reg-caso/pag-reg-caso.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagInicioComponent
+    PagInicioComponent,
+    PagRegCasoComponent
   ],
   imports: [
     BrowserModule,
