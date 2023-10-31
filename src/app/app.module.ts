@@ -7,12 +7,16 @@ import { PagInicioComponent } from './componentes/pag-inicio/pag-inicio.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { JefeiscComponent } from './componentes/jefeisc/jefeisc.component';
+import { PapeleraComponent } from './componentes/papelera/papelera.component';
+import { AdministradorComponent } from './componentes/administrador/administrador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagInicioComponent,
-    JefeiscComponent
+    JefeiscComponent,
+    PapeleraComponent,
+    AdministradorComponent
   ],
   imports: [
     BrowserModule,
