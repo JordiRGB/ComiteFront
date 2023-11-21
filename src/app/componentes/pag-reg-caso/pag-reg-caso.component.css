@@ -65,8 +65,8 @@
   }
 
     /*SECCION 1*/
-       .carousel-inner {
-        width: 100%; /* Ajusta el ancho al 100% para que se adapte al contenedor */
+    .carousel-inner {
+      width: 100%; /* Ajusta el ancho al 100% para que se adapte al contenedor */
     }
       
     .carousel-item img {
@@ -93,91 +93,170 @@
 
     /*seccion formulario*/
 
-    .formularioReg{ /*estilos para el div, como tamaño y color entre otras cosas en donde entraran todos los demas componentes, inputs, textarea, etc*/
-        background-color: #d2d1d1;
-        height: 1000px;
+    .formularioReg {
+      background-color: #d2d1d1;
+      height: 1000px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .campo {
+      margin-top: 50px;
+      flex: 1;
+      margin-right: 10px;
+      margin-left: 60px;
+    }
+    
+    .campo2 {
+      flex: 1;
+      margin-left: 60px;
+      margin-block-start: -12%;
+    }
+    
+    .campo3 {
+      flex: 0;
+      margin-left: 60px;
+      margin-block-start: -20%;
+    }
+    
+    .campo4 {
+      flex: 0;
+      margin-left: 60px;
+      margin-block-start: -25%;
+      margin-inline-end: 20px;
+    }
+    
+    .campo5 {
+      flex: 0;
+      margin-left: 400px;
+      margin-block-start: -12%;
+      margin-inline-end: 20px;
+    }
+    
+    @media (max-width: 1200px) {
+      /* Ajustes para pantallas medianas */
+      .formularioReg {
+        height: auto;
+      }
+    
+      .campo,
+      .campo2,
+      .campo3,
+      .campo4,
+      .campo5 {
+        flex: 1;
+        margin: 10px;
+      }
+    
+      .campo5 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      /* Ajustes para pantallas pequeñas */
+      .formularioReg {
+        height: auto;
+      }
+    
+      .campo,
+      .campo2,
+      .campo3,
+      .campo4,
+      .campo5 {
+        flex: 1;
+        margin: 10px;
+      }
+    
+      .campo5 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    
+    .form-label {
+      text-align: center;
+      width: 400px;
+    }
+    
+    .form-control {
+      width: 375px;
+    }
+    
+    .inpName {
+      width: 450px;
+    }
+    
+    .inpCorreo {
+      width: 450px;
+    }
+    
+    label {
+      font-weight: 500;
+      display: block;
+    }
+    
+    .C1 {
+      margin-top: 23px;
+      flex: 0;
+      height: 30px;
+      width: 150px;
+      border-style: hidden;
+    }
+    
+    .opciones,
+    .opciones2,
+    .opciones3 {
+      text-align: center;
+      margin-top: 35px;
+      height: 20px;
+      width: 175px;
+    }
+    
+    @media (max-width: 1200px) {
+      /* Ajustes para pantallas medianas */
+      .form-label {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+      }
+    
+      .form-control,
+      .inpName,
+      .inpCorreo {
+        width: 100%;
+      }
+    
+      .opciones,
+      .opciones2,
+      .opciones3 {
+        margin-top: 10px;
+        margin-inline-start: 0;
+        width: 100%;
+      }
     }
-      
-      .campo { /*datos personales con inputs como matricula, nombre y telefono*/
-        margin-top: 50px;
-        flex: 1;
-        margin-right: 10px; /* Espacio entre los campos, ajusta según sea necesario */
-        margin-left: 60px;
+    
+    @media (max-width: 768px) {
+      /* Ajustes para pantallas pequeñas */
+      .form-label {
+        width: 100%;
       }
-      .campo2{ /*direccion con un textarea, cuadros de select para carrera, tipo de caso y semestre*/
-        flex: 1;
-        margin-left: 60px;
-        margin-block-start: -12%;
+    
+      .form-control,
+      .inpName,
+      .inpCorreo {
+        width: 100%;
       }
-      .campo3{ /*correo electronico y confirmacion de correo con dos inputs*/
-        flex: 0;
-        margin-left: 60px;
-        margin-block-start: -20%;
+    
+      .opciones,
+      .opciones2,
+      .opciones3 {
+        margin-top: 10px;
+        margin-inline-start: 0;
+        width: 100%;
       }
-      .campo4{ /*motivos personales y academicos en donde se establecen dos textarea*/
-        flex: 0;
-        margin-left: 60px;
-        margin-block-start: -25%;
-        margin-inline-end: 20px;
-      }
-      .campo5{ /*apartado 5, para el seleccionador de evidencia*/
-        flex: 0;
-        margin-left: 400px;
-        margin-block-start: -12%;
-        margin-inline-end: 20px;
-      }
-      .form-label{ /*label de texto para subir evidencia*/
-        text-align: center;
-        width: 400px;
-      }
-      .form-control{ /*input file para subir archivos*/
-        width: 375px;
-      }
-
-      .inpName{ /*input para el nombre, estableciendo otro tamaño diferente para el input*/
-        width: 450px;
-      }
-      .inpCorreo{ /*input para el correo, estableciendo otro tamaño diferente para el input*/
-        width: 450px;
-      }
-      
-      label { /*estilo para todos los labels*/
-        font-weight: 500;
-        display: block; /* Para que el label ocupe todo el ancho del campo */
-      }
-
-      .C1{ /*boton para estado de caso*/
-        margin-top: 23px;
-        flex: 0;
-        height: 30px;
-        width: 150px;
-        border-style: hidden;
-      }
-    .opciones{ /*estilos para el primer select que incluye el seleccionador de carreras*/
-        text-align: center;
-        margin-top: 35px;
-        margin-inline-start: -20px;
-        height: 20px;
-        width: 175px;
-    }
-    .opciones2{ /*estilos para el segundo select que incluye el seleccionador de tipo de caso*/
-        text-align: center;
-        margin-top: 35px;
-        margin-inline-start: -60px;
-        height: 20px;
-        width: 175px;
-    }
-    .opciones3{ /*estilos para el tercer select que incluye el seleccionador de semestres*/
-        text-align: center;
-        margin-top: 35px;
-        margin-inline-start: -100px;
-        height: 20px;
-        width: 175px;
-    }
-
+    } 
+    
     /*Seccion contacto*/
     .sec44 {
         background-color: #000000;
@@ -198,4 +277,5 @@
             font-size: 3vw; /* Tamaño de fuente relativo para dispositivos móviles */
         }
     }
+
     
