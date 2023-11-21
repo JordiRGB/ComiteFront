@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pag-inicio',
-  templateUrl: './pag-inicio.component.html',
-  styleUrls: ['./pag-inicio.component.css']
+  selector: 'app-pag-reg-caso',
+  templateUrl: './pag-reg-caso.component.html',
+  styleUrls: ['./pag-reg-caso.component.css']
 })
-export class PagInicioComponent {
+export class PagRegCasoComponent {
   ngAfterViewInit(): void {
     this.myFunction();
   }
