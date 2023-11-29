@@ -4,13 +4,16 @@ import { PagInicioComponent } from './componentes/pag-inicio/pag-inicio.componen
 import { PagRegCasoComponent } from './componentes/pag-reg-caso/pag-reg-caso.component';
 import { PagLogInComponent } from './componentes/pag-log-in/pag-log-in.component';
 import { PagRestablecerPassComponent } from './componentes/pag-restablecer-pass/pag-restablecer-pass.component';
+import {PagSignUpComponent}from './componentes/pag-sign-up/pag-sign-up.component'
 
 const routes: Routes = [
   { path: 'inicio', component: PagInicioComponent },
   { path: 'regcaso', component: PagRegCasoComponent },
   { path: 'login', component: PagLogInComponent },
+  { path: 'signup', component: PagSignUpComponent},
   { path: 'restablecer', component: PagRestablecerPassComponent },
-  { path: '**', component: PagInicioComponent } // Manejo de rutas no encontradas
+  { path: '**', component: PagInicioComponent }, // Manejo de rutas no encontradas
+  
 ];
 
 @NgModule({  

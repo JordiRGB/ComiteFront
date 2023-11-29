@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { PagRegCasoComponent } from './componentes/pag-reg-caso/pag-reg-caso.component';
 import { PagLogInComponent } from './componentes/pag-log-in/pag-log-in.component';
 import { PagRestablecerPassComponent } from './componentes/pag-restablecer-pass/pag-restablecer-pass.component';
+import { PagSignUpComponent } from './componentes/pag-sign-up/pag-sign-up.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { PagRestablecerPassComponent } from './componentes/pag-restablecer-pass/
     PagInicioComponent,
     PagRegCasoComponent,
     PagLogInComponent,
-    PagRestablecerPassComponent
+    PagRestablecerPassComponent,
+    PagSignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
