@@ -52,7 +52,6 @@ header {
     color: #fff;
     padding: 10px 20px;
     width: 100%;
-    background-image: url('src/assets/images/Triangulos.png'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta correcta de tu imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
     background-position: left top; /* Alinea la imagen a la izquierda arriba */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */

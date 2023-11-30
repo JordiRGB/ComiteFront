@@ -16,10 +16,11 @@ const routes: Routes = [
   { path: 'login', component: PagLogInComponent },
   { path: 'signup', component: PagSignUpComponent},
   { path: 'restablecer', component: PagRestablecerPassComponent },
-  { path: '**', component: PagInicioComponent }, // Manejo de rutas no encontradas
   { path: 'jefesisc', component: JefeiscComponent},
   { path: 'papelera', component: PapeleraComponent},
   { path: 'administrador', component: AdministradorComponent},
+  { path: '**', component: PagInicioComponent }, // Manejo de rutas no encontradas
+  
 ];
 
 @NgModule({  
