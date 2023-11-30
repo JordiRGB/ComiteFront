@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagInicioComponent } from './componentes/pag-inicio/pag-inicio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+import {  MatButtonModule  } from '@angular/material/button';
 import { PagRegCasoComponent } from './componentes/pag-reg-caso/pag-reg-caso.component';
 import { PagLogInComponent } from './componentes/pag-log-in/pag-log-in.component';
 import { PagRestablecerPassComponent } from './componentes/pag-restablecer-pass/pag-restablecer-pass.component';
